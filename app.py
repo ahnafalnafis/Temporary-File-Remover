@@ -6,7 +6,7 @@ from win10toast import ToastNotifier
 
 path_temp = 'C:\\Windows\\Temp' # YOU DON'T NEED TO CHANGE IT
 
-path_temp2 = 'C:\\Users\\Ahnaf\\AppData\\Local\\Temp' # PLEASE CUT THE CURLY BRACES AND CHANGE YOUR USERNAME
+path_temp2 = 'C:\\Users\\{}\\AppData\\Local\\Temp' # PLEASE CUT THE CURLY BRACES AND CHANGE YOUR USERNAME
 
 pre = 'C:\\Windows\\Prefetch' # YOU DON'T NEED TO CHANGE IT
 
