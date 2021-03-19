@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "I:\Code\Temp_file_remover\runner.bat", 0, True
