@@ -26,9 +26,9 @@ path_temp2 = 'C:\\Users\\{Username}\\AppData\\Local\\Temp'
 And enter the correct file location where the files you downloaded in [runner.vbs](runner.vbs) and [runner.bat](runner.bat).  
 runner.vbs
 ```vbs
-CreateObject("Wscript.Shell").Run "<Path>\runner.vbs", 0, True
+CreateObject("Wscript.Shell").Run "{Path}\runner.vbs", 0, True
 ```
 runner.bat
 ```bat
-python <Path>\app.py
+python {Path}\app.py
 ```
