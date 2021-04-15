@@ -2,7 +2,7 @@
 
 ### Requirements
 
-1. Windows 7, 8.1, 10
+1. Windows OS
 2. Make sure you have correctly installed Python in your computer.
 3. Minimum [version of pip](https://pip.pypa.io/en/stable/): 19.0. Upgrade your pip with `pip install --upgrade pip`
 4. Make sure you have added Python paths in Environment Variable path.
