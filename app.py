@@ -3,12 +3,10 @@ import time
 
 from win10toast import ToastNotifier
 
-
-path_temp = 'C:\\Windows\\Temp' # YOU DON'T NEED TO CHANGE IT
-
-path_temp2 = 'C:\\Users\\{}\\AppData\\Local\\Temp' # PLEASE CUT THE CURLY BRACES AND CHANGE YOUR USERNAME
-
-pre = 'C:\\Windows\\Prefetch' # YOU DON'T NEED TO CHANGE IT
+## Paths:
+path_temp = 'C:\\Windows\\Temp' # DON'T CHANGE IT!!
+prefetch = 'C:\\Windows\\Prefetch' # DON'T CHANGE IT!!
+path_temp2 = 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp' # PLEASE REPLACE USERNAME BY YOUR USERNAME
 
 
 def temp():
@@ -29,16 +27,20 @@ def temp_2():
 
 def prefetch():
     try:
-        if os.path.isdir(pre):
-            os.removedirs(pre)
+        if os.path.isdir(prefetch):
+            os.removedirs(prefetch)
     except:
         print("Prefetch folder doesn't exist")
 
 
 def notify():
     notifier = ToastNotifier()
-    notifier.show_toast(title="Temp File Remover",
-                        msg="Temp file removing started.", icon_path="E:\\Code\\Temp_file_remover\\cleaner.ico", duration=15)
+    notifier.show_toast(
+        title="Temp File Remover",
+        msg="Temp file removing started.",
+        icon_path="PATH\\TO\\DIR\\cleaner.ico", # CHANGE ICON PATH
+        duration=15
+    )
 
 
 def deletion():
@@ -48,7 +50,7 @@ def deletion():
             temp()
             temp_2()
             prefetch()
-            time.sleep(60*120)
+            time.sleep(60*120) # YOU CAN CHANGE INTERVAL
         except Exception as error:
             print(error)
 
